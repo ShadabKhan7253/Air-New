@@ -316,3 +316,30 @@ ul.list li a:hover {
 }
 
 /* /Article */
+
+/* FOOTER */
+
+#main-footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+#main-footer .footer-logo {
+  max-width: 180px;
+}
+
+#main-footer input[type="email"] {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .container > *:last-child {
+  background-color: #444;
+  grid-column: 1 / span 4;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+}
+/* /FOOTER */
