@@ -187,6 +187,28 @@ ul.list li a:hover {
   cursor: pointer;
 }
 
+/****************************************************************************************************
+************************************ CATEGORIES CLASSES ************************************************
+****************************************************************************************************/
+.category {
+  display: inline-block;
+  color: #fff;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.category-sports {
+  background-color: var(--category-sports);
+}
+.category-tech {
+  background-color: var(--category-tech);
+}
+.category-ent {
+  background-color: var(--category-ent);
+}
 /* NAVBAR */
 .navbar {
   background: #fff;
@@ -238,3 +260,34 @@ ul.list li a:hover {
 }
 
 /* /NAVBAR */
+
+/* SHOWCASE */
+#showcase {
+  position: relative;
+  background: url("../images/featured.jpg") center center;
+  background-size: cover;
+}
+
+#showcase::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#showcase .container {
+  display: grid;
+  min-height: 70vh;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.showcase-content {
+  z-index: 1;
+  color: #fff;
+}
+/* /SHOWCASE */
