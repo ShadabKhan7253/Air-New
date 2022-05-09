@@ -343,3 +343,13 @@ ul.list li a:hover {
   font-size: 0.85rem;
 }
 /* /FOOTER */
+
+.page-content {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 2rem;
+}
+
+.page-content > *:first-child {
+  grid-row: 1 / span 4;
+}
